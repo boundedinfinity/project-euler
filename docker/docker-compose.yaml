@@ -1,0 +1,86 @@
+services:
+    go:
+      image: go:1
+      build:
+          context: .
+          dockerfile: ./Dockerfile.go
+      volumes:
+            - ..:/w
+      entrypoint: 
+            - go
+            - run
+    javascript:
+        image: javascript:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.javascript
+        volumes:
+            - ..:/w
+        entrypoint: 
+            - node
+    java:
+        image: java:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.java
+        volumes:
+            - ..:/w
+        entrypoint:
+            - java
+    perl:
+        image: perl:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.perl
+        volumes:
+            - ..:/w
+        entrypoint: 
+            - perl
+    php:
+        image: php:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.php
+        volumes:
+            - ..:/w
+        entrypoint: 
+            - php
+    python:
+        image: python:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.python
+        volumes:
+            - ..:/w
+        entrypoint: 
+            - python
+    ruby:
+        image: ruby:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.ruby
+        volumes:
+            - ..:/w
+        entrypoint: 
+            - ruby
+    rust:
+        image: rust:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.rust
+        volumes:
+            - ..:/w
+        entrypoint: 
+            - rust-script
+    typescript:
+        image: typescript:1
+        build:
+          context: .
+          dockerfile: ./Dockerfile.typescript
+        volumes:
+            - ..:/w
+        entrypoint: 
+            - deno
+            - run
+            - --allow-all
+    

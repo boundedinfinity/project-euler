@@ -1,0 +1,5 @@
+# https://hub.docker.com/_/rust
+# https://rust-script.org/
+
+FROM rust:1.73-bookworm
+RUN cargo install rust-script
